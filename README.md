@@ -10,7 +10,7 @@ This Terraform project sets up a ClickHouse cluster with 3 nodes in Google Cloud
 - Terraform installed locally
 - Google Cloud SDK installed
 - SSH key pair
-- default password is admin:clickhousePWD, please change it in modules/clickhouse/user_admin.xml with ( echo -n 'your_new_strong_password_for_clone' | sha256sum | tr -d ' -' )
+- Change default password in modules/clickhouse/user_admin.xml with ( echo -n 'your_new_strong_password' | sha256sum | tr -d ' -' )
  
 ## Configuration
 
